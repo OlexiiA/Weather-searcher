@@ -3,12 +3,15 @@ const divRef = document.querySelector(`.wrapper`);
 const btn = document.querySelector(`button`)
 formRef.addEventListener(`submit`, onSubmit);
 
+divRef.style.display = "none" // hide content;
+
 function onSubmit(e) {
 e.preventDefault(); 
 const value = formRef.elements.searchQuery.value;
 getData(value)
-
 formRef.reset();
+divRef.style.display = "block" // view content;
+divRef.innerHTML = ""; // при сабміті очищує контент;
 }
 
 
