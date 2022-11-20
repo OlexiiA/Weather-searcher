@@ -1,0 +1,112 @@
+body {
+    font-family: 'Rubik Glitch', cursive;
+}
+.wrapper {
+    background-color: transparent;
+    /* display: flex; */
+    /* justify-content: center; */
+    border-radius: 50px;
+    max-width: 450px;
+    padding: 50px;
+    margin: auto;
+    margin-top: 100px;
+    box-shadow: 13px 9px 21px 8px rgba(0,0,0,0.75);
+-webkit-box-shadow: 13px 9px 21px 8px rgba(0,0,0,0.75);
+-moz-box-shadow: 13px 9px 21px 8px rgba(0,0,0,0.75);
+
+position: relative;
+z-index: 3;
+}
+
+.weather__city {
+    font-size: 50px;
+    text-shadow: 3px 7px 9px rgba(0,0,0,1);
+    font-family: 'Rubik Glitch', cursive;
+};
+
+.weather__status {
+    font-size: 25px;
+    margin-bottom: 5px;
+  
+};
+ 
+.weather__temp {
+    font-size: 25px;
+ 
+};
+
+.weather__feels-likes {
+    font-size: 25px;
+    
+}
+
+.weather__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.span {
+    margin-left: 15px;
+}
+
+
+/* Form */
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    position: relative;
+    
+z-index: 3;
+}
+.btn {
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 12px;
+    box-shadow: 17px 17px 21px 3px rgba(0,0,0,0.83);
+-webkit-box-shadow: 17px 17px 21px 3px rgba(0,0,0,0.83);
+-moz-box-shadow: 17px 17px 21px 3px rgba(0,0,0,0.83);
+}
+
+input {
+    border-radius: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: transparent;
+    color: black;
+    box-shadow: 17px 17px 21px 3px rgba(0,0,0,0.83);
+-webkit-box-shadow: 17px 17px 21px 3px rgba(0,0,0,0.83);
+-moz-box-shadow: 17px 17px 21px 3px rgba(0,0,0,0.83);
+}
+::placeholder{
+    color:black;
+}
+
+/* video */
+.video {
+    position: relative;
+z-index: 1;
+}
+
+.video_media {
+    width: 100%;
+    height: auto;
+    position: absolute;
+}
+
+.intro {
+    max-height: 100vh;
+    
+}
+
+.intro:after {
+content:"";
+display: block;
+
+position: absolute;
+top: 0;
+left: 0;
+z-index: 2;
+}
